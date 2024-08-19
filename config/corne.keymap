@@ -60,13 +60,15 @@
             >;
         };
 
-        layer_3 {
+        shortcuts {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans          &trans  &trans        &kp N         &kp I         &kp P     &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp H   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp L     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans        &trans        &trans    &trans  &trans  &trans
             >;
+
+            label = "Shortcuts";
         };
     };
 };

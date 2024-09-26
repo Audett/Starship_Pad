@@ -65,7 +65,7 @@
 &trans          &trans  &trans        &kp N         &kp I         &kp P     &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &kp H   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp L     &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans        &trans        &trans    &trans  &trans  &trans
+                                      &trans        &trans        &trans    &tog 4  &trans  &trans
             >;
 
             label = "Shortcuts";
@@ -73,13 +73,24 @@
 
         Game_Layer {
             bindings = <
-&kp ESC    &kp TAB    &kp Q  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
-&none      &none      &kp Z  &kp X  &kp C  &kp V        &kp B  &none  &none  &none  &none  &none
-                             &none  &none  &kp SPACE    &none  &none  &none
+&kp ESC    &kp TAB    &kp Q  &kp W  &kp E  &kp R        &kp Y   &kp U          &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &kp H   &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp T      &kp B      &kp Z  &kp X  &kp C  &kp V        &kp N   &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                             &kp G  &mo 5  &kp SPACE    &tog 4  &kp RIGHT_GUI  &none
             >;
 
             label = "Gaming";
+        };
+
+        NumberGame {
+            bindings = <
+&kp I  &kp U   &kp N7  &kp N8  &kp N9  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
+&kp O  &kp N0  &kp N4  &kp N5  &kp N6  &kp H     &trans  &trans  &trans  &trans  &trans  &trans
+&kp P  &kp J   &kp N1  &kp N2  &kp N3  &kp N     &trans  &trans  &trans  &trans  &trans  &trans
+                       &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Gaming#";
         };
     };
 };
